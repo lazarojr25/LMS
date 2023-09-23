@@ -1,0 +1,175 @@
+ /* Estilos para o navegador superior móvel */
+ .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top-nav button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-nav button:hover {
+    background-color: #555;
+}
+
+/* Estilos para o conteúdo */
+.content {
+    margin-top: 70px; /* Aumentei a margem para dar mais espaço ao conteúdo */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para o menu lateral esquerdo */
+.left-menu {
+    width: 10%;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para os links no menu lateral esquerdo */
+.left-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-menu ul li {
+    margin-bottom: 8px;
+}
+
+.left-menu a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.left-menu a:hover {
+    color: #007BFF;
+}
+
+/* Estilos para o conteúdo da galeria */
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o menu lateral direito */
+.right-menu {
+   width: 10%;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para os links no menu lateral direito */
+.right-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-menu ul li {
+    margin-bottom: 8px;
+}
+
+.right-menu a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.right-menu a:hover {
+    color: #007BFF;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    clear: both;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilo para links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para as curiosidades */
+section {
+    width: 95%;
+    padding: 20px;
+
+}
+
+article {
+    background-color: #eee;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.conteudo-curiosidades {
+    width: 60%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:900px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  @media (max-width:600px) {
+    .gallery { grid-template-columns: repeat(1, 1fr); }
+  }
